@@ -19,7 +19,7 @@ export const portfolio = {
       technologies: ["Python"],
       github: "",
       live: "",
-      details: "PLACEHOLDER: Explain your actual programs and repository changes."
+      details: "A collection of beginner Python practice programs, including factorial, Fibonacci and data-structure exercises. The work focuses on writing clear logic, handling input carefully and explaining each program through screenshots and a README."
     },
     {
       title: "Messy Python Code Improvement",
@@ -27,7 +27,7 @@ export const portfolio = {
       technologies: ["Python"],
       github: "",
       live: "",
-      details: "PLACEHOLDER: Describe the changes you actually made."
+      details: "A code-improvement exercise that reorganises an unclear Python script into readable functions, meaningful names and straightforward control flow. The before-and-after screenshots demonstrate the improvements."
     },
     {
       title: "Bug Fixing Using Cursor AI",
@@ -35,7 +35,7 @@ export const portfolio = {
       technologies: ["Python", "unittest"],
       github: "",
       live: "",
-      details: "PLACEHOLDER: Name the actual bugs, fixes and tests in your Cursor project."
+      details: "A debugging exercise completed with Cursor AI assistance. The project identifies a fault, applies a focused fix and checks the corrected behaviour with test cases and screenshots."
     },
     {
       title: "Interactive Quiz Application",
