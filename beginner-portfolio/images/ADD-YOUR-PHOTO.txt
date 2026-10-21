@@ -1,0 +1,3 @@
+Put the student's own JPG, PNG or WebP photo in this folder.
+Then set photo in data.js, for example: "images/profile.jpg".
+No photo has been supplied, so this starter does not pretend to include one.

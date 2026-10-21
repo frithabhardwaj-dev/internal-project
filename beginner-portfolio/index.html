@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A student portfolio with class projects, project search and a portfolio chatbot.">
+  <title>Student portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#home">My portfolio<span class="brand-line"></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#chatbot">Chatbot</a>
+    </nav>
+    <button id="themeToggle" type="button" aria-pressed="false">Dark mode</button>
+  </header>
+
+  <main id="main" class="wrap">
+    <p id="setupNotice" class="setup-notice" hidden>This starter still needs personal details and project links. See START-HERE.md before submitting.</p>
+    <noscript><p>Enable JavaScript to load the profile, search projects and use the chatbot.</p></noscript>
+    <section id="home" class="hero" aria-labelledby="name">
+      <div>
+        <h1 id="name">Student portfolio</h1>
+        <p id="introduction" class="intro"></p>
+        <div class="actions">
+          <a class="button primary" href="#projects">Explore my projects</a>
+          <a class="button" href="#chatbot">Ask about my work</a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <div id="photoContainer"></div>
+        <div id="photoNote" class="photo-note">Your photo goes here</div>
+        <figcaption id="education"></figcaption>
+      </figure>
+    </section>
+
+    <section id="about" class="section about-layout" aria-labelledby="aboutTitle">
+      <h2 id="aboutTitle">About me</h2>
+      <p id="aboutText"></p>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skillsTitle">
+      <h2 id="skillsTitle">Skills</h2>
+      <ul id="skillsList" class="skills-list"></ul>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projectsTitle">
+      <div class="section-heading">
+        <div><h2 id="projectsTitle">My projects</h2><p>Class exercises in Python and web development.</p></div>
+        <p id="resultCount" role="status" aria-live="polite"></p>
+      </div>
+      <div class="filters">
+        <div><label for="projectSearch">Search projects</label><input id="projectSearch" type="search" placeholder="Try Python, Quiz or Book" autocomplete="off"></div>
+        <div><label for="technologyFilter">Technology</label><select id="technologyFilter"><option value="all">All technologies</option></select></div>
+        <button id="resetFilters" type="button">Clear filters</button>
+      </div>
+      <div id="projectList" class="project-grid"></div>
+      <p id="emptyState" class="empty-state" hidden>No matching projects. Try another search or clear the filters.</p>
+    </section>
+
+    <section id="contact" class="section about-layout" aria-labelledby="contactTitle">
+      <h2 id="contactTitle">Contact</h2>
+      <div><p>Find my code or send me a message.</p><div id="contactLinks" class="actions"></div></div>
+    </section>
+
+    <section id="chatbot" class="section chat-layout" aria-labelledby="chatTitle">
+      <div>
+        <h2 id="chatTitle">Ask about my portfolio</h2>
+        <p>Ask a question about my skills, studies or class projects.</p>
+        <p class="muted">Each question is answered on its own. Questions and public portfolio details are sent to the configured AI provider. Avoid sharing private information.</p>
+        <div class="suggestions" aria-label="Example questions">
+          <button type="button" data-question="What projects are listed in this portfolio?">What are your projects?</button>
+          <button type="button" data-question="What Python programs are listed?">Explain the Python programs</button>
+          <button type="button" data-question="How does the reading list work?">How does the reading list work?</button>
+        </div>
+      </div>
+      <div class="chat-panel">
+        <div id="chatMessages" class="chat-messages" role="log" aria-live="polite" aria-label="Chat messages">
+          <p class="message assistant">Ask me about the information on this portfolio. I will say when a detail has not been provided.</p>
+        </div>
+        <form id="chatForm">
+          <label for="chatInput">Your question</label>
+          <textarea id="chatInput" rows="2" maxlength="500" required placeholder="What are your skills?"></textarea>
+          <div class="chat-footer"><span id="chatStatus" role="status"></span><button id="sendButton" class="primary" type="submit">Send question</button></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap site-footer"><span id="footerName">Student portfolio</span><span>HTML, CSS &amp; JavaScript</span></footer>
+</body>
+</html>
