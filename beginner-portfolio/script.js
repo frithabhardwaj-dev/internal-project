@@ -65,7 +65,7 @@ if (!contact.children.length) contact.textContent = "Contact details have not be
 
 const incomplete = JSON.stringify(portfolio).includes("PLACEHOLDER") ||
   !portfolio.photo || !portfolio.email || !webUrl(portfolio.github) ||
-  portfolio.projects.some((project) => !webUrl(project.github));
+  portfolio.projects.some((project) => project.github && !webUrl(project.github));
 byId("setupNotice").hidden = !incomplete;
 
 // Theme storage is optional: blocked browser storage must not break the page.

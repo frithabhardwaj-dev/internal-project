@@ -17,6 +17,7 @@ HTML, CSS, JavaScript and a small Node.js server function. Gemini REST is the ex
 - Search by project name or technology, combined technology filter, result count and empty state.
 - Light/dark toggle with browser preference storage when available.
 - A chatbot request to /api/chat, with portfolio context, loading feedback and useful failure messages.
+- Projects represented by screenshots may omit a repository URL; only links that are provided are validated.
 
 ## Run locally
 
