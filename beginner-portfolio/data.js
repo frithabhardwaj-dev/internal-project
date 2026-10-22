@@ -25,7 +25,7 @@ export const portfolio = {
       title: "Messy Python Code Improvement",
       description: "A class exercise in making a Python script easier to read and understand with AI assistance.",
       technologies: ["Python"],
-      github: "https://github.com/frithabhardwaj-dev/Bug-fixing-using-cursor-ai",
+      github: "https://github.com/frithabhardwaj-dev/Messy-python-code-improvement",
       live: "",
       details: "A code-improvement exercise that reorganises an unclear Python script into readable functions, meaningful names and straightforward control flow. The before-and-after screenshots demonstrate the improvements."
     },
