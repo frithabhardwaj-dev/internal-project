@@ -17,7 +17,7 @@ export const portfolio = {
       title: "Python Programs Collection",
       description: "Factorial, Fibonacci, and structure-to-dictionary exercises, with a repository README.",
       technologies: ["Python"],
-      github: "",
+      github: "https://github.com/frithabhardwaj-dev/python-program-collection",
       live: "",
       details: "A collection of beginner Python practice programs, including factorial, Fibonacci and data-structure exercises. The work focuses on writing clear logic, handling input carefully and explaining each program through screenshots and a README."
     },
