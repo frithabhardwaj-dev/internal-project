@@ -25,7 +25,7 @@ export const portfolio = {
       title: "Messy Python Code Improvement",
       description: "A class exercise in making a Python script easier to read and understand with AI assistance.",
       technologies: ["Python"],
-      github: "",
+      github: "https://github.com/frithabhardwaj-dev/Bug-fixing-using-cursor-ai",
       live: "",
       details: "A code-improvement exercise that reorganises an unclear Python script into readable functions, meaningful names and straightforward control flow. The before-and-after screenshots demonstrate the improvements."
     },
@@ -33,7 +33,7 @@ export const portfolio = {
       title: "Bug Fixing Using Cursor AI",
       description: "A debugging exercise that uses tests to check a Python program before and after a fix.",
       technologies: ["Python", "unittest"],
-      github: "",
+      github: "https://github.com/frithabhardwaj-dev/Bug-fixing-using-cursor-ai",
       live: "",
       details: "A debugging exercise completed with Cursor AI assistance. The project identifies a fault, applies a focused fix and checks the corrected behaviour with test cases and screenshots."
     },
