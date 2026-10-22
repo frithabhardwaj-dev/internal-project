@@ -48,7 +48,7 @@ For Gemini:
 
 1. Obtain your own API key through Google AI Studio. Do not send it to another chat.
 2. Copy .env.example to a new file named .env.local in this project folder.
-3. Fill GEMINI_API_KEY with the real key and GEMINI_MODEL with a model ID available to that account. Use the exact ID, without a models/ prefix. Both settings are required.
+3. Fill GEMINI_API_KEY with the real key and GEMINI_MODEL with a model ID available to that account (for example, `gemini-3.8-flash` if Google AI Studio lists it for the key). Use the exact ID, without a models/ prefix. Both settings are required.
 4. Restart npm start and ask a portfolio question.
 
 If you see “The chatbot is not configured yet”, that is a real setup error, not a working chatbot. No fake or canned AI answers are included.

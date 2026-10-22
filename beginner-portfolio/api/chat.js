@@ -50,9 +50,17 @@ export default async function chat(req, res) {
       }
     );
     if (!response.ok) {
-      const message = response.status === 429
-        ? "The AI service is busy or its quota has been reached. Try again later."
-        : "The AI service could not answer. The owner should check the API key and model settings.";
+      let providerMessage = "";
+      try {
+        const providerError = await response.json();
+        providerMessage = providerError?.error?.message || "";
+      } catch { /* Keep the user-safe fallback below. */ }
+      const message = response.status === 404
+        ? "The configured Gemini model is unavailable. Set GEMINI_MODEL to a model enabled for this API key and redeploy."
+        : response.status === 429 || response.status === 503
+          ? "The AI service is busy or its quota has been reached. Try again later."
+          : "The AI service could not answer. The owner should check the API key and model settings.";
+      console.error("Gemini request failed", response.status, providerMessage);
       return res.status(502).json({ error: message });
     }
     const data = await response.json();
